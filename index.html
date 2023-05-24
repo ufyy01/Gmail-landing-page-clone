@@ -1,104 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
 
- <!-- google icon link -->
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
- <!-- google icon link end -->
+    <!-- google icon link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- google icon link end -->
 
- <!-- google font link -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
- <!-- google font link end -->
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font link end -->
 
- <title>Gmail Clone</title>
-</head>
-<body>
- 
- <!-- header start -->
- <header class="header">
-   <div class="header_left">
-    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="googleMailLogo">
-  </div>
-  <div class="header_middle">
-   <span class="material-symbols-outlined">
-    search
-    </span>
-    <input type="text" name="search" placeholder="Search in emails">
-    <span class="material-symbols-outlined">
-     tune
-     </span>
-  </div>
-   <div class="header_end">
-    <div class="header_right">
-    <div id="dot"></div>
-   <span>Active</span>
-   <span class="material-symbols-outlined">
-    arrow_drop_down
-    </span>
-   </div>
-    <span class="material-symbols-outlined">
-     help
-     </span>
-     <span class="material-symbols-outlined">
-      settings
-      </span>
-     <span class="material-symbols-outlined">
-      apps
-      </span>
-     <div id="profile">
-      <div>
-       <span>
-       <img id="googleLogo" src="https://www.google.com/u/1/ac/images/logo.gif?uid=108901744474957767770&service=google_gsuite" alt="googleLogo" width="75px">
-      </span>
-     </div>
-      <div id="profile_pic">
-       <span class="material-symbols-outlined">
-        account_circle
-        </span>
+    <title>Gmail Clone</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="header_middle">
+        <span class="material-symbols-outlined header-hover"> search </span>
+        <input type="text" name="search" placeholder="Search in emails" />
+        <span class="material-symbols-outlined header-hover"> tune </span>
       </div>
-     </div>
-    </div>
- </header>
-<!-- header end -->
+      <div class="header_end">
+        <div class="header_right">
+          <!-- <div id="dot"></div> -->
+          <span id="activeDot">Active</span>
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+        <span class="material-symbols-outlined header-hover"> help </span>
+        <span class="material-symbols-outlined header-hover"> settings </span>
+        <span class="material-symbols-outlined header-hover"> apps </span>
+        <div id="profile">
+          <div>
+            <span>
+              <img
+                id="googleLogo"
+                src="https://www.google.com/u/1/ac/images/logo.gif?uid=108901744474957767770&service=google_gsuite"
+                alt="googleLogo"
+                width="75px"
+              />
+            </span>
+          </div>
+          <div id="profile_pic">
+            <span class="material-symbols-outlined"> account_circle </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
 
- <!-- sidebar start -->
- <div class="side_bar">
-  <div class="menu_bar">
-   <span class="material-symbols-outlined">
-    menu
-    </span>
+    <!-- sidebar start -->
+    <div class="side_bar">
+      <div class="menu_bar">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+      <div class="side_baroptions">
+        <span class="material-symbols-outlined" id="active"> mail </span>
+        <h3>Mail</h3>
+      </div>
+      <div class="side_baroptions">
+        <span class="material-symbols-outlined"> chat_bubble </span>
+        <h3>Chat</h3>
+      </div>
+      <div class="side_baroptions">
+        <span class="material-symbols-outlined"> groups </span>
+        <h3>Spaces</h3>
+      </div>
+      <div class="side_baroptions">
+        <span class="material-symbols-outlined"> videocam </span>
+        <h3>Meet</h3>
+      </div>
     </div>
-  <div class="side_baroptions">
-   <span class="material-symbols-outlined" id="active">
-    mail
-    </span>
-    <h3>Mail</h3>
-   </div>
-   <div class="side_baroptions">
-    <span class="material-symbols-outlined">
-     chat_bubble
-     </span>
-     <h3>Chat</h3>
-   </div>
-   <div class="side_baroptions">
-    <span class="material-symbols-outlined">
-     groups
-     </span>
-     <h3>Spaces</h3>
-   </div>
-   <div class="side_baroptions">
-    <span class="material-symbols-outlined">
-     videocam
-     </span>
-     <h3>Meet</h3>
-   </div>
- </div>
- <!-- sidebar end -->
-</body>
+    <!-- sidebar end -->
+
+    <!-- main body starts -->
+    <div class="main-sidebar">
+      <div class="main-sidebar-logo">
+        <img
+          src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+          alt="googleMailLogo"
+        />
+      </div>
+      <button class="sidebar-compose">
+        <span class="material-symbols-outlined"> edit </span>
+        Compose
+      </button>
+      <div class="sidebar-options" id="sidebar-active">
+        <span class="material-symbols-outlined" id="sidebar-icon-active">
+          inbox
+        </span>
+        <h3>Inbox</h3>
+      </div>
+      <div class="sidebar-options">
+        <span class="material-symbols-outlined"> star </span>
+        <h3>Starred</h3>
+      </div>
+      <div class="sidebar-options">
+        <span class="material-symbols-outlined"> schedule </span>
+        <h3>Snoozed</h3>
+      </div>
+      <div class="sidebar-options">
+        <span class="material-symbols-outlined"> send </span>
+        <h3>Sent</h3>
+      </div>
+      <div class="sidebar-options">
+        <span class="material-symbols-outlined"> note </span>
+        <h3>Draft</h3>
+      </div>
+      <div class="sidebar-options">
+        <span class="material-symbols-outlined"> expand_more </span>
+        <h3>More</h3>
+      </div>
+      <div id="sidebar-footer">
+        <h4>Labels</h4>
+        <span class="material-symbols-outlined"> add </span>
+      </div>
+    </div>
+    <!-- main side bar ends -->
+
+    <!-- Email block starts -->
+    <!-- setting header starts -->
+    <div class="main-body">
+    <div class="setting-left">
+     <input type="checkbox">
+      <span class="material-symbols-outlined"> arrow_drop_down </span>
+      <span class="material-symbols-outlined"> refresh </span>
+      <span class="material-symbols-outlined"> more_vert </span>
+    </div>
+    <div class="setting-right">
+      <p>1-50 of 2045</p>
+      <span class="material-symbols-outlined"> chevron_left </span>
+      <span class="material-symbols-outlined"> navigate_next </span>
+      <span class="material-symbols-outlined"> keyboard </span>
+      <span class="material-symbols-outlined"> arrow_drop_down </span>
+    </div>
+  </div>
+    <!-- setting header stops -->
+
+    <!-- Email block ends -->
+    <!-- main body ends -->
+  </body>
 </html>
+
