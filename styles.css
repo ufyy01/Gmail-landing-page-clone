@@ -272,7 +272,6 @@
    margin-top: 7px;
    display: flex;
    justify-content: space-between;
-   /* width: 78%; */
    height: 3em;
    border-radius: 20px 20px 0 0;
  }
@@ -355,6 +354,7 @@ padding-right: 30px;
 .mailList:hover {
   border-top: 1px solid var(--hover);
   box-shadow: 0 4px 4px -2px var(--icon);
+  visibility: visible;
 }
 .emailRow-left {
   display: flex;
@@ -365,6 +365,9 @@ padding-right: 30px;
   margin: 5px;
   font-size: 21px;
   opacity: 0.5;
+}
+.check {
+  margin-right: 5px;
 }
 #align {
   padding-top: 3px;
@@ -400,19 +403,32 @@ font-weight: 200;
 .hoverIcons {
   display: flex;
   justify-content: flex-end;
-  flex: 0.15;
+  flex: 0.1;
   font-size: 12px;
+  margin-left: 15px;
   align-items: center;
   position: relative;
-  background-color: green;
+  padding: 0 12px;
 }
 .emailicon {
-  display: flex;
-  flex: 0.2;
+  display: none;
+  flex: 0.1;
   position: absolute;
-  left: 2px;
-  background-color: red;
+  /* left: 2px; */
+  /* visibility: hidden; */
 }
 .emailicon .material-symbols-outlined {
   padding: 0 5px;
+  margin: 0 5px;
+  color: var(--icon);
+  width: 32px;
+  height: 30px;
+  padding-top: 3px;
+  padding-left: 4px;
+  border-radius: 100px;
+  background-color: red;
+}
+.mailList:hover .emailicon {
+  display: flex;
+  flex-grow: 2;
 }
